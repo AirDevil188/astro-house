@@ -1,0 +1,18 @@
+node_modules
+dist
+build
+drizzle
+.next
+.vscode
+.cursor
+.env
+.env.local
+.env.test
+
+
+
+# Don't format images and icons
+
+public/**/*.svg
+public/**/*.png
+public/**/*.jpg
