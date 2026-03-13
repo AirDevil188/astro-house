@@ -7,7 +7,6 @@ import {
   primaryKey,
   uuid,
 } from 'drizzle-orm/pg-core';
-import { Infer } from 'zod';
 
 export const userRoles = pgEnum('roles', [
   'user',
@@ -131,7 +130,7 @@ export const postsToTagsRelations = relations(postToTags, ({ one }) => ({
   }),
 }));
 
-// typescript tabs
+// typescript types
 export type User = InferSelectModel<typeof users>;
 export type Post = InferSelectModel<typeof posts>;
 export type Comments = InferSelectModel<typeof comments>;
