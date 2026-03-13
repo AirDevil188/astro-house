@@ -28,9 +28,9 @@ const envSchema = z.object({
   APP_STAGE: z
     .enum(['development', 'test', 'production'])
     .default('development'),
+  BETTER_AUTH_URL: z.string().startsWith('http://'),
+  BETTER_AUTH_SECRET: z.string().length(32),
   DATABASE_URL: z.string().startsWith('postgresql://'),
-  STACK_SECRET_SERVER_KEY: z.string().startsWith('ssk_').length(49),
-  NEXT_PUBLIC_STACK_PROJECT_ID: z.string().length(36),
   CLOUDINARY_API_CLOUD_NAME: z.string().length(9),
   CLOUDINARY_API_SECRET: z.string().length(27),
   CLOUDINARY_API_KEY: z.string().length(15),
