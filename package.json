@@ -13,7 +13,8 @@
     "drizzle:studio": "npx drizzle-kit studio"
   },
   "dependencies": {
-    "@stackframe/stack": "^2.8.72",
+    "@better-auth/drizzle-adapter": "^1.5.5",
+    "better-auth": "^1.5.5",
     "custom-env": "^2.0.6",
     "dotenv": "^17.3.1",
     "drizzle-orm": "^0.45.1",
